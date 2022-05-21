@@ -3,7 +3,7 @@ package DAY6;
 // tags : Implmentation , LinkedList, Hard
 public class reverse_nodes_in_k_group {
     // first traverse k nodes from the beginning , keep track of the precedessor of
-    // the first node of such k groups
+    // the first node of such k group
     // reverse the first node of the kth group , and carefully set relevant pointers
     public ListNode reverseKGroup(ListNode head, int k) {
         ListNode newHead = new ListNode(0, head);
