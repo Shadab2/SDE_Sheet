@@ -7,11 +7,11 @@ import java.util.*;
 public class kth_permutation_sequence {
     // observation : if we have 123456 , every digits in the sequence will have
     // (n-1)! permuation staring with that number in order
-    // eg [123] => will have 2! permuation starting with 1 eg [123][132] , so we
-    // can't
+    // eg [123] => will have 2! permuation starting with 1 eg [123][132] , so we can
     // effectively know the exact block
-    // for current permuation , suppose k = 5 , we can surely know that it can be
-    // starting with 1 or 2
+    // for current permuation , suppose k = 5 , we can surely know that it cannot be
+    // starting with 1 or 2 , infact k/2 gives , 2 (0 based indexed) gives 3 as the
+    // first digit
     // it must start with 3 and we will extend this idea recursively
     int fact[] = new int[10];
     {
