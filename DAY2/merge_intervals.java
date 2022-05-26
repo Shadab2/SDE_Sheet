@@ -5,7 +5,6 @@ import java.util.*;
 public class merge_intervals {
 
     public int[][] merge(int[][] interval) {
-        int n = interval.length;
         // we need to sort the interval aq to start time in order to always select
         // intervals with smaller start time
         // so that any interval whose starting time is greater than this interval would
