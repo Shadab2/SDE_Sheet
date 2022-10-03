@@ -21,7 +21,7 @@ public class bottom_view {
             else {
                 int[] p = tree.get(vertical);
                 if (p[0] <= depth)
-                    tree.put(vertical, new int[] { depth, root.val });
+                    tree.replace(vertical, new int[] { depth, root.val });
             }
             solve(tree, root.left, depth + 1, vertical - 1);
             solve(tree, root.right, depth + 1, vertical + 1);
