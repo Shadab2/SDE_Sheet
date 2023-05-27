@@ -39,6 +39,10 @@ public class duplicate_number {
 
     // Approach #3
     // floydd warshall , finding cycle start node in the linkedlist
+    // imagine every number in the nums as pointer , we have N+1 integers and nums
+    // contains integers [1,n]
+    // therefore every integer can be pointing to another integer except no one
+    // points to first index as 0 is not in the range
     public int findDuplicate3(int[] nums) {
         int fast = nums[0];
         int slow = nums[0];
